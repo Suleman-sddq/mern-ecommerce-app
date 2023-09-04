@@ -27,7 +27,7 @@ const PlaceOrderScreen = () => {
     try {
       const res = await createOrder({
         orderItems: cart.cartItems,
-        paymentMethod: cart.PaymentMethod,
+        paymentMethod: cart.paymentMethod,
         shippingAddress: cart.shippingAddress,
         itemsPrice: cart.itemsPrice,
         shippingPrice: cart.shippingPrice,

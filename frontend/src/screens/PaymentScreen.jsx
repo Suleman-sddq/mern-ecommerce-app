@@ -7,7 +7,7 @@ import CheckoutSteps from "../components/CheckoutSteps";
 import { savePaymentMethod } from "../slices/cartSlice";
 
 export const PaymentScreen = () => {
-  const [paymentMethod, setPaymentMethod] = useState("PayPal");
+  const [paymentMethod, setPaymentMethod] = useState("jazzcash");
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -37,10 +37,10 @@ export const PaymentScreen = () => {
             <Form.Check
               type="radio"
               className="my-2"
-              label="PayPal or Credit Card"
+              label="Jazz Cash"
               id="Paypal"
               name="paymentMethod"
-              value="PayPal"
+              value="jazzcash"
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></Form.Check>
